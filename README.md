@@ -39,6 +39,8 @@ It runs database migrations automatically on start.
 3. Launch Wren and set the backend URL to `http://localhost:8080` (or your host's LAN IP, e.g.
    `http://192.168.1.20:8080`). Create the admin account on first run.
 
+You only do this once — Wren keeps itself up to date from then on (see [Updating](#updating)).
+
 > **First launch:** if the build isn't notarized yet, macOS may say it "cannot be opened." Right-click
 > the app → **Open** → **Open** (once), or run `xattr -dr com.apple.quarantine /Applications/Wren.app`.
 
@@ -67,7 +69,9 @@ Off by default — the AI UI stays hidden until you configure a provider. See
 docker compose pull && docker compose up -d   # backend
 ```
 
-Download the newest DMG from [Releases](../../releases) for the app.
+The **macOS app updates itself automatically** (via Sparkle): it checks daily and installs new
+versions silently in the background. You can also trigger it anytime from **Wren ▸ Check for Updates…**.
+No need to re-download the DMG after the first install.
 
 ## Privacy & security
 
