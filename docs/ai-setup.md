@@ -36,13 +36,14 @@ Uses your existing ChatGPT subscription via the same OAuth flow the Codex CLI us
 calls OpenAI's Codex backend with the resulting token. No API key to manage.
 
 How it works in Wren:
-1. Choose "Sign in with ChatGPT". The app opens OpenAI's consent page in your browser.
-2. After you approve, the backend captures the redirect automatically on
-   `http://127.0.0.1:1455/auth/callback`. If you run the backend in Docker, make sure port
-   `1455` is published (it is in the provided `docker-compose.yml`).
-3. **If auto-capture can't bind** (headless, remote, or the port is taken), Wren shows the
+1. On the **Mac**, choose "Sign in with ChatGPT". The app opens OpenAI's consent page in your browser.
+2. After you approve, the **Mac app** captures the redirect locally on
+   `http://localhost:1455/auth/callback` and sends the code to the backend. This works no matter
+   where the backend runs (remote / behind a reverse proxy) — no port needs to be published.
+3. **If port 1455 is busy** (the real Codex CLI is running) or you're on iOS, Wren shows the
    redirect URL and you paste it (or the `code`) back. This always works.
-4. Tokens are stored encrypted (AES-256-GCM) and refreshed automatically.
+4. The backend exchanges + stores the tokens encrypted (AES-256-GCM), refreshes them, and runs AI
+   for every device on your account — so you only sign in once, on the Mac.
 
 ### Important caveats (please read)
 

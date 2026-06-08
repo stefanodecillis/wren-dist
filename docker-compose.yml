@@ -42,11 +42,8 @@ services:
       # Reach the compose services regardless of what's in .env.
       DATABASE_URL: postgresql://${POSTGRES_USER:-wren}:${POSTGRES_PASSWORD:-wren}@postgres:5432/${POSTGRES_DB:-wren}?schema=public
       REDIS_URL: redis://redis:6379
-      # Capture the Codex "Sign in with ChatGPT" OAuth redirect through the published 1455 port.
-      CODEX_CALLBACK_BIND: 0.0.0.0
     ports:
       - "8080:8080"
-      - "1455:1455"
     depends_on:
       postgres:
         condition: service_healthy
