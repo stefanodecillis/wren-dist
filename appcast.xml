@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>Wren</title>
+    <description>Wren updates</description>
+    <item>
+      <title>Wren 0.2.0</title>
+      <sparkle:releaseNotesLink>https://github.com/stefanodecillis/wren-dist/releases/tag/v0.2.0</sparkle:releaseNotesLink>
+      <pubDate>Mon, 08 Jun 2026 18:04:52 +0000</pubDate>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/stefanodecillis/wren-dist/releases/download/v0.2.0/Wren-0.2.0.dmg" sparkle:version="0.2.0" sparkle:shortVersionString="0.2.0" sparkle:edSignature="67+4Id6QUEown6emwQ0uBhTqfiSaqRUAQ0b6EBY6IkvJDWgw8mMa/GI2n8ef52osirppfzpRyFvtLv6HJZOtAw==" length="3533333" type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>
