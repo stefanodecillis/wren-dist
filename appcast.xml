@@ -4,6 +4,13 @@
     <title>Wren</title>
     <description>Wren updates</description>
     <item>
+      <title>Wren 0.3.32</title>
+      <sparkle:releaseNotesLink>https://github.com/stefanodecillis/wren-dist/releases/tag/v0.3.32</sparkle:releaseNotesLink>
+      <pubDate>Wed, 24 Jun 2026 16:02:48 +0000</pubDate>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/stefanodecillis/wren-dist/releases/download/v0.3.32/Wren-0.3.32.dmg" sparkle:version="0.3.32" sparkle:shortVersionString="0.3.32" sparkle:edSignature="1+JJO1WYdaEvea2QZSP90sRWADRMd5IdRyBL1APu6ai/1IEG/KJD4s3dgb702v3P945lmuZ5b9HK+tiAF9X6CA==" length="7811807" type="application/octet-stream" />
+    </item>
+    <item>
       <title>Wren 0.3.31</title>
       <sparkle:releaseNotesLink>https://github.com/stefanodecillis/wren-dist/releases/tag/v0.3.31</sparkle:releaseNotesLink>
       <pubDate>Wed, 24 Jun 2026 14:19:11 +0000</pubDate>
